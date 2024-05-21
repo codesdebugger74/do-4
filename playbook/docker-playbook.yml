@@ -1,5 +1,6 @@
 ---
   - name: Build Docker image
+    hosts: all
     connection: ssh
     become: yes
     tasks:
