@@ -4,5 +4,5 @@
     become: yes
     tasks:
       - name: setup docker
-        command: docker build -t uimage /home/devsr/
+        command: docker build -t uimage /home/devsr/opt/
 ...
