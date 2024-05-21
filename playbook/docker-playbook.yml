@@ -3,6 +3,12 @@
     connection: ssh
     become: yes
     tasks:
-      - name: setup docker
-        command: docker build -t uimage /home/devsr/opt/
+      - name: copy files
+        copy: 
+          src: /home/devsr/opt/
+          dest: /home/devsr/
+        notify: build-doicker-image
+    handlers:
+      - name: build-doicker-image
+        command: docker build -t uimage /home/devsr/
 ...
