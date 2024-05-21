@@ -11,5 +11,5 @@
         notify: build-doicker-image
     handlers:
       - name: build-doicker-image
-        shell: docker build -t uimage /home/devsr/
+        shell: docker build -t uimage /home/devsr/docker/
 ...
